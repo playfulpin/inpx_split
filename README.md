@@ -1,4 +1,4 @@
-#
+# inpx_split
 
 ## Project Overview
 **inpx_split** is a set of shell scripts designed to process large INPX
@@ -15,7 +15,7 @@ operations.
 
 ## Project Structure
 
-InpxSolutions/
+inpx_split/
 ├── bin/ # Executables or runnable scripts
 │ ├── inpx_splitter.sh
 │ └── progress_bar.sh
@@ -41,10 +41,10 @@ InpxSolutions/
 ## Setup
 
 1. Clone or copy the project into your development folder:
-   ```bash
+   in bash
    ln -s /mnt/c/Development ~/DEV
    cd ~/DEV
-   git clone <repo-url> InpxSolutions
+   git clone <repo-url> inpx_split
 
 ---
 Script Logic for bin/inpx_splitter.sh
@@ -82,7 +82,7 @@ Notes: Handles initialization of timer, terminal width, and full completion form
 lib/config.sh
 Purpose: Define and preserve the project folder structure.
 Logic:
-Sets PROJECT_ROOT automatically (resolving symbolic link ~/DEV/InpxSolutions).
+Sets PROJECT_ROOT automatically (resolving symbolic link ~/DEV/inpx_split).
 Defines core folders: bin, lib, data, output, log.
 Creates missing folders automatically (mkdir -p).
 Sets LOG_FILE for script-specific logging.
@@ -96,8 +96,6 @@ Current usage: Could include file utilities, INPX operations, or batch helpers.
 
 ## Workflow Diagram
 
-sql
-Copy code
    +----------------+
    |  Input INPX    |
    |  (data/)       |
@@ -144,8 +142,6 @@ Copy code
    |  Output files  |
    |  (output/)     |
    +----------------+
-markdown
-Copy code
 
 **Explanation:**  
 
